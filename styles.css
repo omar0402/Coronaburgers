@@ -43,6 +43,7 @@ body{
 	background-color: black;
 	overflow: auto;
 	overflow-x: hidden;
+	transition: all 1s;
 }
 
 .container .card::-webkit-scrollbar {
