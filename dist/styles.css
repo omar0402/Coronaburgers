@@ -39,11 +39,10 @@ body{
 	overflow: hidden;
 	margin:20px;
 	text-align: center;
-	transition: all 0.25s;
+	transition: all 1s;
 	background-color: black;
 	overflow: auto;
 	overflow-x: hidden;
-	transition: all 1s;
 }
 
 .container .card::-webkit-scrollbar {
