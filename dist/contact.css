@@ -1,0 +1,39 @@
+/*-- INIT Selectors --*/
+
+
+/* -- INIT Tags -- */
+
+/*-- INIT Id's --*/
+
+/* -- INIT Classes -- */
+
+.animated-hamburger {
+    width: 100px;
+    height: 100px;
+    left: 300px;
+    background-image: url("./imagenes/hamburger-solid.svg");
+    position: relative;
+    animation-name: hamburger;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+.establishment {
+    display: flex;
+    justify-content: center;
+    font-family: 'Big Shoulders Stencil Display';
+    font-size: 50px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+}
+
+/* -- INIT Querys -- */
+
+@keyframes hamburger {
+    0%   {background-image: url(./imagenes/hamburger-solid.svg); left:300px; top:0px;}
+    50%  {background-image: url(./imagenes/hotdog-solid.svg); left:1125px; top:0px;}
+    100%  {background-image: url(./imagenes/cookie-solid.svg); left:300px; top:0px;}
+  }
