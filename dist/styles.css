@@ -18,7 +18,8 @@ body{
 	color: white;
 	text-align: center;
 	background-color: black;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
+	text-shadow: 5px 10px 10px rgba(255, 0, 0, 0.815);
 }
 
 /* -- INIT Classes -- */
@@ -156,9 +157,11 @@ body{
 	padding: 16px;
 	color:white;
 	font-size: 50px;
+	transition: all 1s;
 }
 .iconbar a:hover{
 	background-color: white;
+	border-radius: 8px;
 	color:black;
 }
 
@@ -179,10 +182,11 @@ body{
 }
 
 .navbar ul{
-	background-image: url("./imagenes/fries.jpg");
+	background-image: url("./imagenes/potatoes.jpg");
 	border-radius: 10px;
 	display: flex;
 	list-style: none;
+	transition: all 1s;
 }
 
 .navbar li{
@@ -195,18 +199,21 @@ body{
 }
 
 .navbar a{
-	font-family: 'Big Shoulders Stencil Display';font-size: 40px;
+	font-family: 'Big Shoulders Stencil Display';
+	font-size: 40px;
 	font-weight: bold;
-	color: rgb(0, 0, 0);
+	color: yellow;
+	text-shadow: 2px 2px 2px rgba(255, 9, 9, 0.815);
 	text-decoration: none;
 }
 
 .navbar a:hover{
-	color: rgb(124, 98, 60);
+	color: white;
+	text-shadow: 2px 2px 2px rgba(9, 46, 255, 0.815);
 }
 
 .navbar ul:hover{
-	background-image: url("./imagenes/knife.jpg");
+	background-image: url("./imagenes/medium-lettuce.jpg");
 }
 
 .prices{
