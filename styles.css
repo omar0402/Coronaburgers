@@ -13,11 +13,13 @@ body{
 /*-- INIT Id's --*/
 
 #title{
-	font-family: 'Big Shoulders Stencil Display';font-size: 100px;
+	font-family: 'Big Shoulders Stencil Display';
+	font-size: 100px;
 	color: white;
 	text-align: center;
 	background-color: black;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
+	text-shadow: 5px 10px 10px rgba(255, 0, 0, 0.815);
 }
 
 /* -- INIT Classes -- */
@@ -50,13 +52,15 @@ body{
 }
 
 .container .card::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0); 
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0); 
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
     border-radius: 10px;
 }
 
 .container .card::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0); 
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0); 
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
 }
 
 .container .card:hover{
@@ -68,12 +72,14 @@ body{
 	height:270px;
 }
 .container .card h4{
-	font-family: 'Big Shoulders Stencil Display';font-size: 35px;
+	font-family: 'Big Shoulders Stencil Display';
+	font-size: 35px;
 	font-weight: 100px;
 	color:red;
 }
 .container .card p{
-	font-family: 'Big Shoulders Stencil Display';font-size: 25px;
+	font-family: 'Big Shoulders Stencil Display';
+	font-size: 25px;
 	padding:0 1rem;
 	font-size: 25px;
 	font-weight:300;
@@ -86,24 +92,43 @@ body{
 	flex-wrap: wrap;
 }
 
-
 .gallery{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	margin: 0 25px;
 }
 
-.gallery img{
-	width: 450px;
-	height: 300px;
-	margin: 10px;
+.gallery-item{
+	margin: 0 auto;
+    position: relative;
+    top: 30px;
+}
+
+.gallery-item img{
+	width: 368px;
+	height: 270px;
 	border-radius: 8px;
 	transition: all 1s;
 }
 
-.gallery img:hover{
+.gallery-item img:hover{
 	transform: scale(1.1);
 	box-shadow: 10px 10px 10px rgba(185, 23, 23, 0.815);
+}
+
+.gallery-overlay{
+	background-color: rgba(253, 253, 253, 0.80);
+    text-align: center;
+    line-height: 2;
+    position: relative;
+	top: -150px;
+	font-family: 'Big Shoulders Stencil Display';
+	font-size: 18px;
+}
+
+.gallery-overlay:hover{
+	opacity: 0.75;
+    transition: 0.3s ease-in-out;
 }
 
 .ham{
@@ -113,6 +138,31 @@ body{
 
 .ham img{
 	border-radius: 10px;
+}
+
+.iconbar{
+	position: fixed;
+  	top: 50%;
+  	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+	background-color: black;
+	width: 85px;
+	border-radius: 8px;
+	box-shadow: 10px 10px 10px rgba(185, 23, 23, 0.815);
+}
+.iconbar a{
+	display: block;
+	text-align: center;
+	padding: 16px;
+	color:white;
+	font-size: 50px;
+	transition: all 1s;
+}
+.iconbar a:hover{
+	background-color: white;
+	border-radius: 8px;
+	color:black;
 }
 
 .menu{
@@ -132,10 +182,11 @@ body{
 }
 
 .navbar ul{
-	background-image: url("./imagenes/fries.jpg");
+	background-image: url("./imagenes/potatoes.jpg");
 	border-radius: 10px;
 	display: flex;
 	list-style: none;
+	transition: all 1s;
 }
 
 .navbar li{
@@ -148,18 +199,21 @@ body{
 }
 
 .navbar a{
-	font-family: 'Big Shoulders Stencil Display';font-size: 40px;
+	font-family: 'Big Shoulders Stencil Display';
+	font-size: 40px;
 	font-weight: bold;
-	color: rgb(0, 0, 0);
+	color: yellow;
+	text-shadow: 2px 2px 2px rgba(255, 9, 9, 0.815);
 	text-decoration: none;
 }
 
 .navbar a:hover{
-	color: rgb(124, 98, 60);
+	color: white;
+	text-shadow: 2px 2px 2px rgba(9, 46, 255, 0.815);
 }
 
 .navbar ul:hover{
-	background-image: url("./imagenes/knife.jpg");
+	background-image: url("./imagenes/medium-lettuce.jpg");
 }
 
 .prices{

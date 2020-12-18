@@ -5,9 +5,11 @@
 	<meta charset="utf-8"/>
 	<link href='https://fonts.googleapis.com/css?family=Big Shoulders Stencil Display' rel='stylesheet'/>
 	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'/>
-	<title></title>
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"/>
 	<link rel="stylesheet" type="text/css" href="styles.css"/>
-	<link rel="shortcut icon" href="./imagenes/coronaburger.jpg">
+	<link rel="shortcut icon" href="./imagenes/coronaburger.jpg"/>
+	<script src="https://use.fontawesome.com/b309ec0805.js"></script>
+	<title>Coronaburgers</title>
 </head>
 <body>
 	<h1 id="title">Hamburguesas y postres Corona</h1>
@@ -15,10 +17,16 @@
 	<div class="navbar">
 		<ul>
 			<li><a href="#Menu">Menú</a></li>
-			<li><a href="">¿Quiénes somos?</a></li>
-			<li><a href="">Contacto</a></li>
+			<li><a href="whoAreWhe.html">¿Quiénes somos?</a></li>
+			<li><a href="contact.html">Contacto</a></li>
 		</ul>
 	</div>
+
+	<div class="iconbar">
+		<a href="https://www.facebook.com/eddy.corona.3" target="_blank"><i class="fa fa-facebook-square"></i></a>
+		<a href="https://wa.me/message/K625HJPIF6ISF1" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+	</div>
+
 
 	<div class="ham">
 		<img src="./imagenes/ham.jpg" style="width:1000px; height:600px;" >
@@ -29,15 +37,54 @@
 	<hr class="separation"/>
 	<h3 class="subtitles">Catálogo</h3>
 	<hr class="separation"/>
-
+	
 	<div class="gallery">
-		<img src="./imagenes/hambur.jpg">
-		<img src="./imagenes/hotdog.jpg">
-		<img src="./imagenes/papas.jpg">
-		<img src="./imagenes/cupcake.jpg">
-		<img src="./imagenes/cake.jpg">
-		<img src="./imagenes/flan.jpg">
+		
+		<div class="gallery-item">
+			<img src="./imagenes/hambur.jpg">
+			<div class="gallery-overlay">
+				<h1>Hamburguesas</h1>
+			</div>
+		</div>
+
+		<div class="gallery-item">
+			<img src="./imagenes/hotdog.jpg">
+			<div class="gallery-overlay">
+				<h1>Hot Dogs</h1>
+			</div>
+		</div>
+
+		<div class="gallery-item">
+			<img src="./imagenes/papas.jpg">
+			<div class="gallery-overlay">
+				<h1>Papas</h1>
+			</div>
+		</div>
+
+		<div class="gallery-item">
+			<img src="./imagenes/cupcake.jpg">
+			<div class="gallery-overlay">
+				<h1>Cupcakes</h1>
+			</div>
+		</div>
+
+		<div class="gallery-item">
+			<img src="./imagenes/cake.jpg">
+			<div class="gallery-overlay">
+				<h1>Pasteles</h1>
+			</div>
+		</div>
+
+		<div class="gallery-item">
+			<img src="./imagenes/flan.jpg">
+			<div class="gallery-overlay">
+				<h1>Flanes</h1>
+			</div>
+		</div>
+
 	</div>
+
+
 
 	<hr class="separation"/>
 	<h3 class="subtitles"><a name=Menu></a>Menú</h3>
