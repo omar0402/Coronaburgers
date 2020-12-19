@@ -95,7 +95,7 @@
 /* -- INIT Querys -- */
 
 @keyframes hamburger {
-    0%   {background-image: url(./imagenes/hamburger-solid.svg); left:300px; top:0px;}
-    50%  {background-image: url(./imagenes/hotdog-solid.svg); left:1125px; top:0px;}
-    100%  {background-image: url(./imagenes/cookie-solid.svg); left:300px; top:0px;}
+    0%   {background-image: url(./imagenes/hamburger-solid.svg); left:20%; top:0px;}
+    50%  {background-image: url(./imagenes/hotdog-solid.svg); left:75%; top:0px;}
+    100%  {background-image: url(./imagenes/cookie-solid.svg); left:20%; top:0px;}
   }
