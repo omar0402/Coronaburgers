@@ -34,6 +34,8 @@
 }
 
 .animated-hamburger {
+    display: flex;
+    justify-content: center;
     width: 100px;
     height: 100px;
     left: 300px;
@@ -72,6 +74,8 @@
 }
 
 .separation-address {
+    display: flex;
+    justify-content: center;
     border-radius: 0.25rem;
 	border-top: 4px rgb(0, 0, 0);
 	background-color: rgb(0, 0, 0);
@@ -82,6 +86,8 @@
 }
 
 .separation-contact {
+    display: flex;
+    justify-content: center;
 	border-radius: 0.25rem;
 	border-top: 4px rgb(0, 0, 0);
 	background-color: rgb(0, 0, 0);
