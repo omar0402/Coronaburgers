@@ -49,6 +49,7 @@
     -webkit-animation-duration: 8s;
     animation-iteration-count: infinite; 
     -webkit-animation-iteration-count: infinite;
+    overflow-x: hidden;
 }
 
 .contact-icon {
@@ -108,7 +109,7 @@
 
 @keyframes hamburger {
     0% {
-        background-image: url(./imagenes/z88); 
+        background-image: url(./imagenes/hamburger-solid.svg); 
         left:20%; 
         top:0px;
     }
@@ -126,7 +127,7 @@
 
   @-webkit-keyframes hamburger {
     0% {
-        background-image: url(./imagenes/z88); 
+        background-image: url(./imagenes/hamburger-solid.svg); 
         left:20%; 
         top:0px;
     }
