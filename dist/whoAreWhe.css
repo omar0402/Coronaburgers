@@ -1,0 +1,159 @@
+/*-- INIT Selectors --*/
+
+
+/* -- INIT Tags -- */
+
+
+/*-- INIT Id's --*/
+
+#c7 {
+    background-image: url(./imagenes/chocolatecake.jpg);
+}
+
+#c6 {
+    background-image: url(./imagenes/Ilustración_sin_título.PNG);
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+	-moz-animation-delay: -1s;
+}
+
+#c5 {
+    background-image: url(./imagenes/micro-city.jpg);
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+	-moz-animation-delay: -2s;
+}
+
+#c4 {
+    background-image: url(./imagenes/papas.jpg);
+    -webkit-animation-delay: -3s;
+    animation-delay: -3s;
+	-moz-animation-delay: -3s;
+}
+
+#c3 {
+    background-image: url(./imagenes/coronaburger.PNG);
+    -webkit-animation-delay: -4s;
+    animation-delay: -4s;
+	-moz-animation-delay: -4s;
+}
+
+#c2 {
+    background-image: url(./images/minihot.jpg);
+    -webkit-animation-delay: -5s;
+    animation-delay: -5s;
+	-moz-animation-delay: -5s;
+}
+
+#c1 {
+    background-image: url(./imagenes/eddieburger-icon.jpeg);
+    -webkit-animation-delay: -6s;
+    animation-delay: -6s;
+	-moz-animation-delay: -6s;
+}
+
+#c0 {
+    background-image: url(./images/minigrill.jpg);
+    -webkit-animation-delay: -7s;
+    animation-delay: -7s;
+	-moz-animation-delay: -7s;
+}
+
+/* -- INIT Classes -- */
+
+.carousel {
+    -webkit-perspective: 250px;
+    perspective: 250px;
+	-moz-perspective: 250px;
+	width: 300px;
+	height: 150px;
+	top: 50px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.carousel-card {
+    width: 100px;
+	height: 160px;
+	background-color: #442222;
+    font-size: 40px;
+	opacity: 0;
+	position: absolute;
+	top:35px;
+	left:125px;
+	border: solid darkgray 2px;
+    border-radius: 60px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+    text-align: center;
+    -webkit-animation-name: carousel;
+    animation-name: carousel;
+    -moz-animation-name: carousel;
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+    -moz-animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+ }
+
+.carousel-card:hover {
+    border: solid #4466cc 3px;
+    box-shadow: 0px 0px 10px #4466cc;
+}
+
+/* -- INIT Querys -- */
+
+@keyframes carousel {
+    from {
+        -webkit-transform: rotateY( 360deg ) translateZ( 100px ) rotateY( -360deg );
+        -moz-transform: rotateY( 360deg ) translateZ( 100px ) rotateY( -360deg );
+        z-index: 10;
+        opacity: 0.9;
+    }
+    50% {
+        z-index: -10;
+    }
+    to {
+        -webkit-transform: rotateY( 0deg ) translateZ( 100px ) rotateY( 0deg );
+        -moz-transform: rotateY( 0deg ) translateZ( 100px ) rotateY( 0deg );
+        z-index: 10;
+        opacity: 0.9;
+    }
+}
+
+@-webkit-keyframes carousel {
+    from {
+        -webkit-transform: rotateY( 360deg ) translateZ( 100px ) rotateY( -360deg );
+        -moz-transform: rotateY( 360deg ) translateZ( 100px ) rotateY( -360deg );
+        z-index: 10;
+        opacity: 0.9;
+    }
+    50% {
+        z-index: -10;
+    }
+    to {
+        -webkit-transform: rotateY( 0deg ) translateZ( 100px ) rotateY( 0deg );
+        -moz-transform: rotateY( 0deg ) translateZ( 100px ) rotateY( 0deg );
+        z-index: 10;
+        opacity: 0.9
+    }
+}
+
+@-moz-keyframes carousel {
+    from {
+        -moz-transform: rotateY( 360deg ) translateZ( 100px ) rotateY( -360deg );
+        z-index: 10;
+        opacity: 0.9
+    }
+    50% {
+        z-index: -10;
+    }
+    to {
+        -moz-transform: rotateY( 0deg ) translateZ( 100px ) rotateY( 0deg );
+        z-index: 10;
+        opacity: 0.9
+    }
+}

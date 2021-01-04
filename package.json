@@ -1,6 +1,6 @@
 {
   "name": "Hamburguesas",
-  "version": "2.5.3",
+  "version": "2.5.6",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,7 @@
   "bugs": {
     "url": "https://github.com/omar0402/Coronaburgers/issues"
   },
+  
   "homepage": "https://omar0402.github.io/Coronaburgers/",
   "dependencies": {
     "gh-pages": "^3.1.0"
